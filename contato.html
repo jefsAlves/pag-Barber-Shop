@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<hmtl>
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Contato - Baber Jef'S </title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1> <img src="logo.png" alt="Logo da Baber Jef'S"> </h1>
+				
+				<nav>
+					<ul>
+						<li> <a href="index.html"> Home </a> </li> 
+						<li> <a href="product.html"> Produto </a> </li> 
+						<li> <a href="contato.html"> Contato </a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="NomeeSobrenome"> Nome e Sobrenome </label>
+				<input type="text" id="NomeeSobrenome" class="input-padrao" required placeholder="João Silva">
+
+				<label for="Email"> Email </label>
+				<input type="email" id="Email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="Telefone"> Telefone </label>
+				<input type="tel" id="Telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="Mensagem"> Mensagem </label>
+				<textarea cols="62" rows="10" id="Mensagem" required> </textarea>	
+				
+				
+
+				<fieldset>
+					<legend> Como prefere o nosso contato? </legend>
+					<label for="Email-radio"> <input type="radio" name="contato" value="email" id="Email-radio">Email </label>
+
+					<label for="Telefone-radio"> <input type="radio" name="contato" value="Telefone" id="Telefone-radio"> Telefone </label>
+
+					<label for="Whatsaap-radio"> <input type="radio" name="contato" value="Whatsapp" id="Whatsaap-radio" checked> Whatsapp </label>
+				</fieldset>
+
+				<fieldset>
+					<legend> Qual horário prefere ser atendido? </legend>
+					<select>
+						<option> Manhã </option>
+						<option> Tarde </option>
+						<option> Noite </option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossa novidades por email? </label>
+				<input type="submit" value="Enviar Formulário" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<td> Dia </td>
+						<td> Horário </td>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td> Segunda-Feira </td>
+						<td> 08h00 ~ 20h00 </td>
+					</tr>
+					<tr>
+						<td> Quarta-Feira </td>
+						<td> 08h00 ~ 20h00 </td>
+					</tr>
+					<tr>
+						<td> Sexta-Feira </td>
+						<td> 08h00 ~ 20h00 </td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer> 
+			<img src="logo-branco.png" alt="Logo da Baber Jef'S">
+			<p class="copyright">&copy;  Copyright Baber Jef'S - 2020 </p>
+		</footer>
+
+	</body>
+</hmtl>
